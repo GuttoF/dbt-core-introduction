@@ -425,6 +425,24 @@ files = [
 ]
 
 [[package]]
+name = "dbt-postgres"
+version = "1.8.2"
+description = "The set of adapter protocols and base functionality that supports integration with dbt-core"
+optional = false
+python-versions = ">=3.8.0"
+files = [
+    {file = "dbt_postgres-1.8.2-py3-none-any.whl", hash = "sha256:b0d9f53b5927722cd22e8135e0b76181febf3cf89aef8caf039c59bfce78afc9"},
+    {file = "dbt_postgres-1.8.2.tar.gz", hash = "sha256:23b302626dd11e90594ccff0347148252c37af1a1e8c8710bc9c03b05337f3d3"},
+]
+
+[package.dependencies]
+agate = ">=1.0,<2.0"
+dbt-adapters = ">=0.1.0a1,<2.0"
+dbt-common = ">=0.1.0a1,<2.0"
+dbt-core = ">=1.8.0a1"
+psycopg2-binary = ">=2.9,<3.0"
+
+[[package]]
 name = "dbt-semantic-interfaces"
 version = "0.5.1"
 description = "The shared semantic layer definitions that dbt-core and MetricFlow use"
@@ -1551,6 +1569,20 @@ files = [
 six = ">=1.5"
 
 [[package]]
+name = "python-dotenv"
+version = "1.0.1"
+description = "Read key-value pairs from a .env file and set them as environment variables"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "python-dotenv-1.0.1.tar.gz", hash = "sha256:e324ee90a023d808f1959c46bcbc04446a10ced277783dc6ee09987c37ec10ca"},
+    {file = "python_dotenv-1.0.1-py3-none-any.whl", hash = "sha256:f7b63ef50f1b690dddf550d03497b66d609393b40b564ed0d674909a68ebf16a"},
+]
+
+[package.extras]
+cli = ["click (>=5.0)"]
+
+[[package]]
 name = "python-slugify"
 version = "8.0.4"
 description = "A Python slugify application that also handles Unicode"
@@ -2124,4 +2156,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "89a565ac3858c16c0620f0f92a6edae67a9d3ba7c01b9bcb06683739726ca4e7"
+content-hash = "6f14e7e8eb837299b9b95509d78e8298900ca8c00d6f63f72d5e4d49bd5bac4f"
